@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Heroku-dyno-waker</string>
+
+    <string name="edittext_worker_hint">Enter Worker Name</string>
+    <string name="edittext_appurl_hint">Enter Heroku WebApp App Url</string>
+
+    <string name="label_worker_name">Worker Name : </string>
+
+    <string name="btn_label">Start Pinger / Waker</string>
+</resources>
