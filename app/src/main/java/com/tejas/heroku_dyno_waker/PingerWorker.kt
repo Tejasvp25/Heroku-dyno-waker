@@ -19,7 +19,7 @@ class PingerWorker(appContext: Context, workerParams: WorkerParameters) : Worker
         } catch (e: Exception) {
             Log.i(TAG, e.message)
             httpURLConnection?.disconnect()
-            Result.failure()
+            Result.retry()
         } finally {
             httpURLConnection?.disconnect()
         }
