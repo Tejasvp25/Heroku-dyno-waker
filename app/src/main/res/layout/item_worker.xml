@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="6dp"
-    android:background="@color/black"
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp">
 
@@ -60,15 +59,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="4dp"
-                android:layout_weight="0.8"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                android:layout_weight="0.6" />
 
             <androidx.appcompat.widget.AppCompatImageButton
                 android:id="@+id/btn_edit"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_weight="0.2"
+                android:layout_weight="0.6"
                 android:background="@null"
                 android:src="@drawable/ic_edit" />
 
