@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
                 .setRequiresBatteryNotLow(true)
                 .build()
 
-        val workerRequest = PeriodicWorkRequestBuilder<PingerWorker>(25, TimeUnit.MINUTES)
+        val workerRequest = PeriodicWorkRequestBuilder<PingerWorker>(20, TimeUnit.MINUTES)
                 .setInputData(inputData)
                 .setConstraints(constraints)
                 .build()
@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
         mSharedPreferencesEditor.putString(workerName, "${workerRequest.id},${url}")
         mSharedPreferencesEditor.commit()
         setAdapter()
-        Toast.makeText(applicationContext, "Pinger Has Started..\n It will ping ${url} after every 25-30 Minutes", Toast.LENGTH_LONG).show()
+        Toast.makeText(applicationContext, "Pinger Has Started..\n It will ping ${url} after every 20-25     Minutes", Toast.LENGTH_LONG).show()
     }
 
     private fun setAdapter() {
